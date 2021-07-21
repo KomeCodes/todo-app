@@ -56,7 +56,7 @@ I'll continue to build more websites/apps using HTML CSS and Javascript to impro
 
 ### Author
 - Frontend Mentor - @officialkome
-- Twitter - @ogheneekome
+- Twitter - @elementherlist
 
 ### Acknowledgments
 Thanks to the Frontend Mentor community for creating these challenges.
