@@ -39,7 +39,7 @@ Users should be able to:
 
 ## My process
 
-I started by coding the design with HTML and CSS, and hardcoded the todos at first, so that i can get all the styling right. Then i took out all hardcoded todos from the page and added the functionality with Javascript that lets users create the todos. The Javascript took more time to implement and I learned a lot during the process.
+I started by coding the design with HTML and CSS, and hardcoded the todos at first, so that i can get all the styling right. Then i took out all hardcoded todos from the page and added the functionality with Javascript that lets users create, delete, check/uncheck the todos. The Javascript took more time to implement and I learned a lot during the process.
 
 As soon as everything worked fine, I refactored my code a bit then noted functionalities that I may add in the future e.g storing the todos so that they are accessible and according to date. Add a "view previous todo list that has two options, go back one step or choose the exact date of the todo list you want to view.
 
