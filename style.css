@@ -32,7 +32,9 @@ main {
 }
 
 /* Logo and toggle styles */
-
+h1{
+  font-size: 1.8rem;
+}
 .logo{
   text-decoration: none;
   letter-spacing: 0.8rem;
