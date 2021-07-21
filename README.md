@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []
-- Live Site URL: []
+- Solution URL: [https://www.frontendmentor.io/solutions/todo-app-F3cEoGFia]
+- Live Site URL: [https://todo-app-delta-ochre.vercel.app/]
 
 ## My process
 

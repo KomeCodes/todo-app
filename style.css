@@ -260,7 +260,7 @@ footer{
 }
 
 header.dark{
-  background: url("images/bg-mobile-dark.jpg") no-repeat;
+  background: url("images/bg-mobile-dark.jpg")no-repeat;
   background-color: rgb(115, 46, 158);
   background-size: cover;
   height: 300px;
