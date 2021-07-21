@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  background: hsl(0, 0%, 98%);
+  width: 100%;
+  height: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  color: hsl(235, 19%, 35%);
+}
+header {
+  background: url("images/bg-mobile-light.jpg") no-repeat;
+  background-color: rgb(115, 46, 158);
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  right: 5%;
+  left: 5%;
+  padding-top: 3.5rem;
+}
+
+/* Logo and toggle styles */
+
+.logo{
+  text-decoration: none;
+  letter-spacing: 0.8rem;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 700;
+}
+.inner-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#theme-toggle{
+  cursor: pointer;
+}
+/* create todo form and todos styles */
+
+#todoForm{
+  margin-top: 40px;
+}
+.form-group,
+.todos-block {
+  margin-top: 20px;
+  padding: 0px 0px 20px 0px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.form-group{
+    padding-top: 20px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 15px 85%;
+    width: 100%;
+}
+
+.create-todo{
+  margin-left: 25px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.todo{
+  position: relative;
+  list-style: none;
+  border-bottom: 0.5px solid hsl(233, 11%, 84%);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  transition: all 0.5s ease;
+  /* cursor: move; */
+}
+
+/* radio button styles - custom-radio class is for the radio buttons on the todos that'll be created and todoRadio ID is for the radio button on the create todo form */
+
+.check-todo, #todo-radio{
+    height: 20px;
+    width: 20px;
+    opacity: 0.35;
+    visibility: hidden;
+  }
+
+.check-todo::after, #todo-radio::after{
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: relative;
+  background: transparent;
+  display: inline-block;
+  visibility: visible;
+  border: 1.5px solid hsl(236, 9%, 61%);
+  cursor: pointer;
+}
+
+.check-todo:hover:after{
+  border-color: palevioletred;
+}
+
+#todo-radio{
+  /* Because it shouldn't be clickable */
+  pointer-events:none;
+}
+
+::placeholder {
+  color: hsl(236, 9%, 61%);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.todo-container{
+  height: 428px;
+  overflow: auto;
+  /* padding: 0; */
+}
+
+.todo-completed{ /* When a completed todo is checked as done/completed*/
+  text-decoration: line-through;
+  opacity: 0.35;
+}
+.hide{
+  display: none;
+}
+.special-class::after{
+  content: url("images/icon-check.svg");
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.delete-todo-btn{
+  cursor: pointer;
+  margin-left: 20px;
+}
+.fall{ /* when a todo is deleted */
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+/* Todo status styles */
+
+.todo-status-container{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px 0 20px;
+  color:  hsl(236, 9%, 61%);
+}
+
+/* Todo counter and clear button */
+
+.clear-completed-btn{
+  border: none;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #fff;
+  color: hsl(236, 9%, 61%);
+  cursor: pointer;
+}
+
+.clear-completed-btn:hover{
+  color: hsl(235, 19%, 35%);
+}
+/* Todo filter/sort styles */
+
+.todo-sort{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 70px;
+    width: 100%;
+
+}
+
+.todo-sort button{
+  font-family: 'Josefin Sans', sans-serif;
+   border: none;
+   background: none;
+    padding: 15px;
+    color:hsl(236, 9%, 61%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.todo-sort button:hover{
+  color: hsl(235, 19%, 35%);
+}
+.todo-sort button:active{
+  color: hsl(220, 98%, 61%);
+}
+
+
+.drag-drop{
+  text-align: center;
+  align-items: center;
+  margin: 100px 0 0 0;
+  color: hsl(236, 9%, 61%);
+}
+.drag-drop p{
+  opacity: 0.5;
+}
+
+/* footer + attribution styles */
+
+footer{
+  position: absolute;
+  bottom: -580px;
+  right: 5%;
+  left: 5%;
+}
+.attribution{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0;
+}
+.attribution a{
+  text-decoration: none;
+  color: rgb(204, 64, 204);
+}
+.attribution a:hover{
+  text-decoration: underline;
+}
+
+/* Dark theme styles */
+
+.dark{
+  transition: all 0.5s ease-in-out;
+}
+.light-animation{
+  transition: all 0.3s ease-in;
+}
+
+header.dark{
+  background: url("images/bg-mobile-dark.jpg") no-repeat;
+  background-color: rgb(115, 46, 158);
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+
+body.dark{
+  background: hsl(235, 21%, 11%);
+}
+.form-group.dark, .todos-block.dark, .clear-completed-btn.dark, .create-todo.dark, #todo-radio.dark::after{
+  background: hsl(235, 24%, 19%);
+  color: hsl(234, 39%, 85%);
+}
+.clear-completed-btn.dark{
+  color: hsl(236, 9%, 61%);
+}
+.clear-completed-btn.dark:hover{
+  color: hsl(234, 39%, 85%);
+}
+.todo-sort.dark{
+  background: hsl(235, 24%, 19%);
+  color: hsl(236, 9%, 61%);
+}
+.todo-sort.dark button:hover{
+  color: hsl(234, 39%, 85%);
+}
+.todo-sort.dark button:active{
+  color: hsl(220, 98%, 61%);
+}
+
+/* Styles according to screen size */
+
+@media (min-width: 700px) {
+  main {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    right: 25%;
+    left: 25%;
+    padding-top: 3.5rem;
+  }
+
+  header{
+    background: url("images/bg-desktop-light.jpg") no-repeat;
+  }
+
+  header.dark{
+    background: url("images/bg-desktop-dark.jpg") no-repeat;
+  }
+  .create-todo{
+    margin-left: 35px;
+  }
+  .delete-todo-btn{
+    opacity: 0.70;
+
+  }
+
+  .delete-todo-btn:hover{
+    opacity: 1;
+  }
+
+}
+
+@media (min-width: 1300px) {
+  main {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    right: 30%;
+    left: 30%;
+    padding-top: 3.5rem;
+  }
+  .create-todo{
+    margin-left: 35px;
+  }
+  .todo-sort{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 0px;
+    position: relative;
+    right: initial;
+    left: initial;
+    top: 0;
+    width: initial;
+
+}
+.drag-drop{
+  margin: 50px 0 0 0;
+}
+}

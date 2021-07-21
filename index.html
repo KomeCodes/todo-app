@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+    <title>Todo app | Frontend Mentor</title>
+  </head>
+  <body>
+    <header>
+      <!-- contains image and overlay -->
+    </header>
+    <main class="container">
+      <div class="inner-flex">
+        <a href="/" class="logo">TODO</a>
+        <div>
+          <img
+            src="images/icon-moon.svg"
+            alt="moon icon for dark theme toggle"
+            id="theme-toggle"
+            onclick="darkTheme();"
+          />
+        </div>
+      </div>
+      <form id="todo-form">
+        <div class="form-group">
+          <input type="radio" id="todo-radio" name="check-todo" />
+          <input
+            id="new-todo-text"
+            type="text"
+            name="createTodo"
+            class="create-todo"
+            placeholder="Create a new todo..."
+            value
+            autocomplete="off"
+          />
+        </div>
+      </form>
+      <div class="todos-block">
+        <div class="todo-container">
+          <ul id="todoslist" class="todo-list"></ul>
+        </div>
+        <div class="todo-status-container">
+          <p><span id="active-todo-counter">0</span> items left</p>
+          <div class="todo-sort">
+            <button id="sort-all" value="all">All</button>
+            <button id="sort-active" value="active">Active</button>
+            <button id="sort-completed" value="completed">Completed</button>
+          </div>
+          <button
+            id="clear-completed-btn"
+            class="clear-completed-btn"
+            value="clear-completed-btn"
+          >
+            Clear Completed
+          </button>
+        </div>
+      </div>
+      <div class="drag-drop">
+        <p>Drag and drop to reorder list</p>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/KomeCodes">Kome</a>.
+      </div>
+    </footer>
+    <script src="index.js" type="text/javascript">
+    //  const sortableList = document.getElementById("todoslist");
+    </script>
+  </body>
+</html>
