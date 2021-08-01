@@ -64,7 +64,7 @@ I know there are better ways to recreate this with less code (actually, I hope s
 
 I'll continue to build more websites/apps using HTML CSS and Javascript to improve my skills then learn more about APIs and then React
 
-*** Aside ***
+***Aside**
 
 I started Javascript30 by Wes Bos and I have done the first two challenges (Not pushed it here yet). I want to complete the challenge so if you see this. Ask me about it if you don't find a repo of the project (give me some days though, please 🥺) or if you find one and it is covered in dust. Thanks my friend.
 
