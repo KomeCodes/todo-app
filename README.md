@@ -51,7 +51,7 @@ Right now, I am so happy with the progress I made with this challenge. It is ama
 
 The local storage part was a bit confusing at first but once I clocked what was going on, it became really easy to manipulate. It was really fun to try several things to make something work and keep failing until I finally got it right.
 
-I know there are better ways to recreate this with less code (actually, I hope so! 😭) and I'll keep learning, and may re-do this chalenge again in the future but for now YAAASSSS girrrrrl! You rock!
+I know there are better ways to recreate this with less code (actually, I hope so! 😭) and I'll keep learning, and may re-do this challenge again in the future but for now YAAASSSS girrrrrl! You rock!
 
 ### Built with
 
