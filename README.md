@@ -45,11 +45,7 @@ As soon as everything worked fine, I refactored my code a bit then noted functio
 
 *** A week or so later ***: Todos are now stored and removed dynamically in/from local storage. For the other features I plan to add, I wonder if creating the todos as objects, and giving them a date parameter using the date function would help. Or using the date fucntion to dynamically give each todo their IDs. I'll try all these on a later date.
 
-<<<<<<< HEAD
 Right now, I am so happy with the progress I made with this challenge. It is amazing how much one can do with some knowledge of HTML, CSS, loops, conditional statements, arrays and local storage/JSON. Have you seen what I was doing with nested for loops dear??? Have you?? Hahaha!
-=======
-I started by coding the design with HTML and CSS, and hardcoded the todos at first, so that i can get all the styling right. Then i took out all hardcoded todos from the page and added the functionality with Javascript that lets users create, delete, check/uncheck the todos. The Javascript took more time to implement and I learned a lot during the process.
->>>>>>> 6e3a80b84f0ae9ce2c09b1d5915c78b7a3a49f72
 
 The local storage part was a bit confusing at first but once I clocked what was going on, it became really easy to manipulate. It was really fun to try several things to make something work and keep failing until you finally get it right.
 
