@@ -49,6 +49,8 @@ function createNewTodo(event) {
     }
   }
 }
+// When the page is refreshed, this checks if there were completed todos on the page before and apply the checkmark accordingly.
+// Doing this by getting the completed todos stored in local storgae (line 231) and comparing it with the todos on the screen. If any of them matches, it applies the completed todo styles.
 
 function checkCompletedTodos() {
   let completedTodos = JSON.parse(localStorage.getItem("completedTodos"));
@@ -69,6 +71,8 @@ function checkCompletedTodos() {
     }
   }
 }
+
+// shows todos on screen
 
 function renderTodos() {
   let todoItems = "";
@@ -210,7 +214,7 @@ function clearCompletedTodo(_event) {
   }
 }
 
-// Count todos and show uncompleted todos count
+// Count todos and show uncompleted/active todos count on screen
 
 function countTodo() {
   const totalTasksContent = todoList.childNodes;
